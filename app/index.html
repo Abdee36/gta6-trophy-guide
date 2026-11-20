@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5) · All 55 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: roadmap to the platinum, missable flags, sourced guides, checklist with export and import.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a roadmap to the platinum, a missable flag, and a guide with its source beside every trophy. Tick a trophy off and it stays ticked in your browser.</p>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+      <p class="progress-line"><strong id="progressText">0 of 55 earned</strong> · <span id="gradeText">0 platinum · 0 gold · 0 silver · 0 bronze</span></p>
+    </div>
+    <div class="quick-stats">
+      <span><strong>~200 h</strong> to platinum</span>
+      <span><strong>4/10</strong> difficulty</span>
+      <span><strong>1</strong> playthrough</span>
+      <span><strong>0</strong> online trophies</span>
+      <span><strong>1</strong> possibly missable</span>
+    </div>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search a trophy, mission or keyword…" aria-label="Search trophies">
+  <div class="filters" id="filters" role="group" aria-label="Filter trophies">
+    <button type="button" data-filter="all" class="chip active">All 55</button>
+    <button type="button" data-filter="story" class="chip">Story</button>
+    <button type="button" data-filter="missable" class="chip">Missable</button>
+    <button type="button" data-filter="collectible" class="chip">Collectibles</button>
+    <button type="button" data-filter="activity" class="chip">Activities</button>
+    <button type="button" data-filter="robbery" class="chip">Robberies</button>
+    <button type="button" data-filter="character" class="chip">Side quests</button>
+    <button type="button" data-filter="online" class="chip">Online</button>
+    <button type="button" data-filter="earned" class="chip">Earned</button>
+    <button type="button" data-filter="todo" class="chip">Still to do</button>
+  </div>
+  <div class="tools">
+    <span class="mini-progress" id="miniProgress">0 / 55 earned</span>
+    <label class="switch"><input id="spoiler" type="checkbox"> <span>Spoiler mode — hide story trophies until earned</span></label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset</button>
+  </div>
+</nav>
+
+<section id="roadmap" class="roadmap" aria-labelledby="roadmapTitle">
+  <h2 id="roadmapTitle">Roadmap to the platinum — Vice Got a Price!</h2>
+  <p class="roadmap-intro">About 200 hours, one playthrough, no online trophies and no difficulty setting. There is no mission replay, so keep a manual save at the start and end of every chapter — the game has 15 manual save slots.</p>
+  <ol class="steps">
+    <li>
+      <h3>Step 1 — Play the story, do side quests as they appear <span class="time">60–80 h</span></h3>
+      <p>Finish all 5 chapters and take the optional missions as they pop up. Scan vehicles with the WAiNK app and study animals with the binoculars as you go — the 100% checklist counts progress made during the story even though you cannot see it yet. Do the character questlines (Andy, Kenton, Billy, Randy, Tyrone, Bret) when they are marked; they all stay available after the story.</p>
+      <p class="warn"><strong>Watch out — the only possibly missable trophy:</strong> Positive Mental Attitude. During Chapter 1, after the mission Down to Earth, Lucia talks about meditating in the kitchen in the morning and walks out to the balcony at Jason's house. Follow her, choose Accept, and do the meditation. It is not marked as a normal spot and it is still unclear whether it is required — do it anyway.</p>
+    </li>
+    <li>
+      <h3>Step 2 — The 100% checklist <span class="time">~100 h</span></h3>
+      <p>After the credits the checklist opens under Progress &gt; Stats &gt; 100% Completion. It is lenient — closer to 60% of true completion: 100 optional missions, scan 200 of 277 base-model vehicles, study 100 of 255 animals, 70 of 80 challenges, 300 stunts, all robberies, all 8 bank vaults, all 39 gang operations and all 15 target decks. Nothing on it is missable. Finishing it earns A Long Road (gold) and most of the grind trophies along the way.</p>
+    </li>
+    <li>
+      <h3>Step 3 — Strangers &amp; Freaks and cleanup <span class="time">~10 h</span></h3>
+      <p>Finish the 8 Strangers &amp; Freaks strands that count (Kirk, Kyle, Yago and Pilot Pete are confirmed) and mop up whatever is left on the checklist. The platinum pops the moment the last of the other 54 is earned.</p>
+    </li>
+  </ol>
+  <p class="roadmap-note">Cheats disable trophies and saving — and they only unlock after the story anyway, so keep them off for the whole run. Sources: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap; PSNProfiles / Exophase — official trophy list.</p>
+</section>
+
+<main>
+  <p id="emptyState" class="empty-state" hidden>No trophies match this filter. There are no online trophies — GTA VI launches as a single-player game with no new GTA Online, so every one of the 55 is earned offline.</p>
+  <ul id="list" class="trophy-list"></ul>
+</main>
+
+<footer class="sources">
+  <h2>Sources</h2>
+  <p>Every guide above is written in our own words. The facts behind them come from:</p>
+  <ul>
+    <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> — roadmap, missable note, per-trophy methods, counts (250 of 397 stunts, 200 of 277 vehicles, 100 of 255 animals, 70 of 80 challenges).</li>
+    <li><a href="https://www.planetgta6.com/en/gta-6-trophies/">PSNProfiles / Exophase — official trophy list</a> (cross-checked at PlanetGTA6) — the 55 official names, descriptions and grades, and which 28 are hidden on PlayStation.</li>
+  </ul>
+  <p class="fineprint">Unofficial fan guide, made for players. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners. No official artwork, logos or game screenshots are used here — the look is our own. Trophy names and descriptions are shown as PlayStation publishes them. Guides were written 19 November 2026, launch day; three trophies (In The Beginning…, Bad Luck, I Guess, Ten Pin) have no confirmed method yet and are marked as such.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
